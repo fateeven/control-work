@@ -64,7 +64,7 @@ if (resultElements == 0)
     WriteLine("В заданном массиве: ");
     PrintArray(array);
     WriteLine();
-    WriteLine($"Количествово найденых элемтов с числом сиволов <= 3  -  [{resultElements}]");
+    WriteLine($"Количество найденных элементов с числом символов  -  [{resultElements}]");
     WriteLine("Итоговоый массив:  []");
 }
 else
@@ -72,7 +72,7 @@ else
     WriteLine("Исходный массив:");
     PrintArray(array);
     WriteLine();
-    WriteLine($"Количествово найденых элемтов с числом сиволов <= 3  -  [{resultElements}]");
+    WriteLine($"Количество найденных элементов с числом символов -  [{resultElements}]");
     WriteLine("Итоговый массив:");
     PrintArray(newArray);
 }
