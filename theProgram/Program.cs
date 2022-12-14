@@ -7,7 +7,6 @@ using static System.Console;
 
 Clear();
 
-
 //Вводим количество элементов первого массива - count
 Write("Введите число элементов массива: ");
 string numberElements = ReadLine();
@@ -31,7 +30,7 @@ while (true)
     else break;
 }
 
-//метод создания массива
+//метод создания массива 
 string[] CreateArray(int size)
 {
     string[] array = new string[size];
@@ -46,7 +45,7 @@ for (int i = 0; i < elements; i++)
     array[i] = ReadLine();
 }
 
-//метод Voidd вывода элементов массива в консоль
+//void метод вывода массива
 void PrintArray(string[] inArray)
 {
     Write("[");
@@ -57,5 +56,17 @@ void PrintArray(string[] inArray)
     Write($"'{inArray[inArray.Length - 1]}'");
     Write("]");
 }
+
 //Выводим первый массив
 PrintArray(array);
+WriteLine();
+//считаем количество элементов с числом символов(индексов) <= 3
+int resultElements = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        resultElements++;
+    } 
+}
+WriteLine($"{resultElements}");
