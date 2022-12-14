@@ -1,0 +1,15 @@
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\bin\Debug\net6.0\theProgram.exe
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\bin\Debug\net6.0\theProgram.deps.json
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\bin\Debug\net6.0\theProgram.runtimeconfig.json
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\bin\Debug\net6.0\theProgram.dll
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\bin\Debug\net6.0\theProgram.pdb
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\theProgram.csproj.AssemblyReference.cache
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\theProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\theProgram.AssemblyInfoInputs.cache
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\theProgram.AssemblyInfo.cs
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\theProgram.csproj.CoreCompileInputs.cache
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\theProgram.dll
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\refint\theProgram.dll
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\theProgram.pdb
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\theProgram.genruntimeconfig.cache
+C:\Users\fatee\OneDrive\Рабочий стол\Обучение\controlwork\theProgram\obj\Debug\net6.0\ref\theProgram.dll
