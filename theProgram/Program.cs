@@ -11,8 +11,8 @@ Clear();
 Write("Введите число элементов массива: ");
 string numberElements = ReadLine();
 //Записываем в переменную число кол-ва элементов в первом массиве, после проверки
-int elements;           
-//проверка на правильность вводных данных
+int elements;
+//проверка на правильность ввода кол-ва элементов
 while (true)
 {
     if (int.TryParse(numberElements, out elements) == false)
@@ -29,20 +29,42 @@ while (true)
     }
     else break;
 }
-
-//метод создания массива 
-string[] CreateArray(int size)
-{
-    string[] array = new string[size];
-    return array;
-}
-
 //создаем первый массив с кол-вом элементов  =  elements
 string[] array = CreateArray(elements);
 for (int i = 0; i < elements; i++)
 {
     Write($"Введите {i + 1}-й элемент массива: ");
     array[i] = ReadLine();
+}
+
+//считаем количество элементов с числом символов(индексов) <= 3 в первом массиве array
+int resultElements = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        resultElements++;
+    }
+}
+
+//Выводим первый массив
+PrintArray(array);
+WriteLine();
+WriteLine($"Найдено {resultElements} элементов с числом сиволов <= 3");
+
+
+
+
+
+
+
+
+
+//метод создания массива 
+string[] CreateArray(int size)
+{
+    string[] array = new string[size];
+    return array;
 }
 
 //void метод вывода массива
@@ -57,16 +79,20 @@ void PrintArray(string[] inArray)
     Write("]");
 }
 
-//Выводим первый массив
-PrintArray(array);
-WriteLine();
-//считаем количество элементов с числом символов(индексов) <= 3
-int resultElements = 0;
+//Формируем новый итоговый массив 
+string[] newArray = CreateArray(resultElements);
+int j = 0;
 for (int i = 0; i < array.Length; i++)
 {
     if (array[i].Length <= 3)
     {
-        resultElements++;
-    } 
+        newArray[j] = array[i];
+        j++;
+    }
 }
-WriteLine($"{resultElements}");
+
+
+
+
+
+
