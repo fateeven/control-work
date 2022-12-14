@@ -10,10 +10,9 @@ Clear();
 //Вводим количество элементов первого массива - count
 Write("Введите число элементов массива: ");
 string numberElements = ReadLine();
-//Записываем в переменную число кол-ва элементов в первом массиве, после проверки
-int elements;
-//проверка на правильность ввода кол-ва элементов
-while (true)
+
+int elements;  //Записываем в переменную число кол-ва элементов в первом массиве, после проверки
+while (true)   //проверка на правильность ввода кол-ва элементов
 {
     if (int.TryParse(numberElements, out elements) == false)
     {
@@ -47,16 +46,36 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 
-//Выводим первый массив
-PrintArray(array);
-WriteLine();
-WriteLine($"Найдено {resultElements} элементов с числом сиволов <= 3");
+//Cоздаем новый итоговый массив и элементов с кол-вом сиволов <= 3
+string[] newArray = CreateArray(resultElements);
+int j = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        newArray[j] = array[i];
+        j++;
+    }
+}
 
-
-
-
-
-
+//Выводим итоговый ответ
+if (resultElements == 0)
+{
+    WriteLine("В заданном массиве: ");
+    PrintArray(array);
+    WriteLine();
+    WriteLine($"Количествово найденых элемтов с числом сиволов <= 3  -  [{resultElements}]");
+    WriteLine("Итоговоый массив:  []");
+}
+else
+{
+    WriteLine("Исходный массив:");
+    PrintArray(array);
+    WriteLine();
+    WriteLine($"Количествово найденых элемтов с числом сиволов <= 3  -  [{resultElements}]");
+    WriteLine("Итоговый массив:");
+    PrintArray(newArray);
+}
 
 
 
@@ -79,17 +98,6 @@ void PrintArray(string[] inArray)
     Write("]");
 }
 
-//Формируем новый итоговый массив 
-string[] newArray = CreateArray(resultElements);
-int j = 0;
-for (int i = 0; i < array.Length; i++)
-{
-    if (array[i].Length <= 3)
-    {
-        newArray[j] = array[i];
-        j++;
-    }
-}
 
 
 
